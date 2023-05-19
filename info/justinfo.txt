@@ -1,0 +1,18 @@
+- Database account alias a
+id bigserial pk(primary key), big serial adalah auto increnment di postgre
+owner varchar
+balance bigint, bigint tipe data untuk menampung angka yg lebih besar dari integer
+cunrrency varchar
+created at timestamz artinya sesuai time zone
+
+- Database entries
+isinya adlah riwayat perubahan dari account blance
+
+id bigserial [pk]
+account_id bigint [ref: > A.id], artinya account_id referensi ke id db account (> artinya one to many 'account one to entries many')
+
+
+
+- dbdiagram.io -> membuat db, dan sql postgre
+- docker -> membuat container
+- tableplus.com -> 
